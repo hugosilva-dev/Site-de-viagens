@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem</title>
+</head>
+<body>
+    <h2>Orçamento</h2>
+    <form action="" method="get"></form>
+        <fieldset>
+        <legend>Dados da viagem</legend>
+            <label>Nome</label>
+            <input type="text" name="nome"><br><br>
+
+            <label>Email</label>
+            <input type="email" name="email"><br><br>
+
+            <label>Data de ida</label>
+            <input type="date" name="data de ida"><br><br>
+
+            <label>Data de volta</label>
+            <input type="date" name="data de volta"><br><br>
+
+            <label>Quantidade de pessoas</label>
+            <input type="number" name="quantidade de pessoas"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Quais serviços deseja contratar?</legend>
+            <br><input type="checkbox" name="passagens" value="passagens">Compra de passagens
+            <br><input type="checkbox" name="hospedagem" value="hospedagem">Reserva de hospedagem
+            <br><input type="checkbox" name="veículo" value="veiculo">Aluguel de veículo
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Escolha a forma de pagamento</legend>
+            <label>
+                <br><input type="radio" name="forma de pagamento" value="cartaoCredito">Cartão de crédito
+            </label>
+            <label>
+                <br><input type="radio" name="forma de pagamento" value="boleto">Boleto
+            </label>
+            <label>
+                <br><input type="radio" name="forma de pagamento" value="pix">Pix
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Escolha o prazo para pagamento</legend>
+            <select name="prazoPagamento">
+                <option value="aVista">À vista</option>
+                <option value="5x">5x sem juros</option>
+                <option value="10" selected>10x com juros</option>
+            </select>
+        </fieldset>
+        <br>
+        <label>Comentário</label><br>
+        <textarea name="comentarios" cols="70" rows="5"></textarea><br><br>
+
+        <button type="submit">Salvar</button>
+</body>
+</html>
